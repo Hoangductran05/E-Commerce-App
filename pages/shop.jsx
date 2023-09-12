@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-
-const footer = () => {
+const shop = () => {
   return (
-    <div>footer</div>
+    <div>shop</div>
   )
 }
 
-export default footer
+export default shop
