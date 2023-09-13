@@ -3,7 +3,7 @@ import React from 'react'
 import { BiPhoneCall } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import { BiLogoAmazon } from 'react-icons/bi'
+import logo from '../assets/img/Untitled-1.png'
 
 const header = () => {
   return (
@@ -31,8 +31,13 @@ const header = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-2">
-           <Link to={'/'}><BiLogoAmazon size={80} /></Link>
+            <Link to={'/'}><img src={logo} alt='logo' className='img-fluid logo' /></Link>
           </div>
+          <div className="col-5 d-flex align-items-center justify-content-between">
+            <Link to={'/'}>Home</Link>
+            <Link to={'shop'}>Shop</Link>
+          </div>
+          <div className="col-5"></div>
         </div>
       </div>
     </header>
